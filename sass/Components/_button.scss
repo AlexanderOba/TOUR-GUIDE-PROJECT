@@ -6,13 +6,13 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        transition: all .3s;  
+        transition: all .4s;  
         position: relative;
         font-size: $default-fonts-size;
     
     }
     &:hover{
-         /* transform: translateY(-.3rem);  */
+         transform: translateY(-.2rem);  
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
         &::after{
             transform: scalex(1.4) scaleY(1.6); 
@@ -28,9 +28,17 @@
         &::after{
             background-color: #fff;
         }
+   
     }
     
-    
+    &--green{
+        background-color: $colorbtn;
+        color: #fff;
+        &::after{
+            background-color:  $colorbtn;
+        }
+    }  
+      
     &::after{
         content: "";
         display: inline-block;
